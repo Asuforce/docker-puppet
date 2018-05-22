@@ -1,0 +1,4 @@
+sudo: required
+services: docker
+before_install: cat microscanner.txt >> Dockerfile
+script: echo "success"
