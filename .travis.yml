@@ -1,4 +1,4 @@
 sudo: required
 services: docker
 before_install: cat microscanner.txt >> Dockerfile
-script: docker build -t asuforce/puppet:local --build-arg=token=$TOKEN --no-cache .
+script: docker build --build-arg=token=$TOKEN --no-cache .
